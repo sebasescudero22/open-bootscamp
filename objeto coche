@@ -1,0 +1,20 @@
+public class Program
+{
+    public static void main(String[] args) {
+        Coche coche = new Coche ();
+        System.out.println(coche.velocidadActual);
+        coche.acelerar();
+        System.out.println(coche.velocidadActual); 
+	}
+}
+
+
+class Coche {
+    int numerodePuertas0;
+    int velocidadMaxima;
+    float velocidadActual;
+    public void acelerar(){
+        velocidadActual =+ 15;
+    }
+    public void desacelerar(){}
+}
