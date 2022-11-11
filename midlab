@@ -1,0 +1,8 @@
+adj= input("adjetivo: ")
+adj2= input("escribe otro adjetivo: ")
+sut= input("escribe un sustantivo: ")
+
+
+midlab= f"Camila es {adj} y jesus es  {adj2} en cambio Sebastian es todo un {sut}"
+
+print(midlab)
