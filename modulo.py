@@ -27,3 +27,23 @@ print("Multiplicación:", resultado)
 
 resultado = dividir(5, 3)
 print("División:", resultado)
+
+
+
+//modulo con scrpt de tiempo
+
+
+import time
+
+def hora_de_irse():
+    hora_actual = time.localtime().tm_hour
+    minutos_actuales = time.localtime().tm_min
+    
+    if hora_actual >= 19:
+        print("¡Hora de irse a casa!")
+    else:
+        minutos_restantes = (19 - hora_actual - 1) * 60 + (60 - minutos_actuales)
+        print(f"Aún no es hora de irse a casa. Quedan {minutos_restantes} minutos de trabajo.")
+
+hora_de_irse()
+
