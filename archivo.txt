@@ -1,0 +1,20 @@
+# Creamos el archivo de texto
+archivo = open("archivo.txt", "w")
+
+# Escribimos en el archivo
+archivo.write("Hola, mundo!\nEste es un archivo de texto creado desde Python.")
+
+# Cerramos el archivo
+archivo.close()
+
+# Abrimos el archivo en modo lectura
+archivo = open("archivo.txt", "r")
+
+# Leemos el contenido del archivo
+contenido = archivo.read()
+
+# Cerramos el archivo
+archivo.close()
+
+# Imprimimos el contenido del archivo
+print(contenido)
