@@ -1,0 +1,24 @@
+import pickle
+
+class Vehiculo:
+    def __init__(self, marca, modelo, year):
+        self.marca = marca
+        self.modelo = modelo
+        self.year = year
+    
+    def __str__(self):
+        return f"{self.marca} {self.modelo} ({self.year})"
+
+# Creamos el objeto vehiculo
+vehiculo1 = Vehiculo("Toyota", "Corolla", 2020)
+
+# Guardamos el objeto vehiculo en un archivo usando pickle
+with open("vehiculo.pkl", "wb") as f:
+    pickle.dump(vehiculo1, f)
+
+# Cargamos el objeto vehiculo desde el archivo
+with open("vehiculo.pkl", "rb") as f:
+    vehiculo2 = pickle.load(f)
+
+# Imprimimos el objeto vehiculo cargado
+print(vehiculo2)
